@@ -17,15 +17,6 @@ dotenv.config();
 const mongoUri = process.env.mongoURI || "mongodb+srv://LoraDB:p-fkFTpRiB5r6h6@cluster0.zszv3.mongodb.net/test"
 let dbName = "mongoose-example"
 
-//export const client = new MongoClient(mongoUri)
-//let db = client.db("mongoose-example")
-//export const bloggersCollection = db.collection<BloggersType>("bloggers")
-//export const postsCollection = db.collection<PostsType>("posts")
-//export const usersCollection = db.collection<UsersDBType>("users")
-//export const commentsCollection = db.collection<CommentsType>("comments")
-//export const usersEmailConfDataCollection = db.collection<UsersEmailConfDataType>("usersEmailConfData")
-//export const endpointsAttemptsTrysCollection = db.collection<AttemptType>("attempts")
-//export const refreshTokensBlackListCollection = db.collection<RefreshTokensCollectionType>('refreshBlackList')
 
 const usersSchema = new mongoose.Schema<UsersDBType>({
     accountData: {
